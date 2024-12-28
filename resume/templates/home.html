@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %} 
+<div class="row my-5">
+
+    <!-- profile image-->
+    <div class="col-12 d-flex justify-content-center align-item-center">
+
+       <div class="circular-image-container">
+          <img  class="circular-image" src="{% static 'images/anarul.png'%}" alt="image">
+       </div>
+    </div>
+
+     <!--Name--> 
+    <div class="col-12 text-center">
+      
+        <div class="name">
+           <h1>Anarul Islam</h1>
+           <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: aqua;" >Machine Learing Engineer</h2>
+        </div>
+
+    </div>
+     
+    <!--social links-->
+    <div class="col-12 text-center mt-3">
+        <div class="col-12 d-flex justify-content-center align-item-center">
+
+        
+                
+                <a href="https://www.linkedin.com/in/islamanarul/" target="_blank" class="ms-2">
+                    <img src="{% static 'images/link.png' %}" alt="linkedin_Image" height="50" width="50" class="social-link">
+                    
+                </a>
+
+                <a href="https://github.com/Anarulislam10" target="_blank" class="ms-2">
+                    <img src="{% static 'images/git.jpg' %}" alt="Github" height="50" width="50" class="social-link">
+                    
+                </a>
+
+                <a href="https://www.facebook.com/profile.php?id=100095427528031" target="_blank" class="ms-2">
+                    <img src="{% static 'images/facebook1.jpg' %}" alt="facebook" height="50" width="50" class="social-link">
+                    
+                </a>
+        
+        </div>
+
+    </div>
+
+
+
+</div>
+
+{% endblock content1 %} 

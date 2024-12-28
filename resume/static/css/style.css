@@ -1,0 +1,119 @@
+body{
+   background-color: rgba(4, 4, 68, 0.801); 
+}
+
+
+.navbar-nav .nav-link:hover{
+    font-weight: bold;
+    color:rgb(2, 88, 88);
+    
+}
+.navbar-nav .nav-link{
+   font-size: 20px;
+    
+}
+
+.navbar-brand{
+    font-size: 30px;
+}
+.navbar-dark{
+    background-color:rgb(18, 1, 46) ;
+}
+.circular-image-container{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #6cdf20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: zoomIn 1s ease forwards,floatImage 4s ease-in-outi infinite;
+
+    
+    animation-delay: 2s,3s;
+
+
+}
+
+.circular-image{
+    width: 115%;
+    height: auto;
+    display: block;
+    
+
+}
+.name{
+    color:honeydew;
+}
+ 
+.title{
+    color:rgb(5, 126, 86) ;
+}
+
+.social-link{
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_image{
+    width: 200px;
+    height: auto;
+    display: block;
+}
+.name h2{
+    animation: slideRight 1s ease forwards;
+    animation-delay: .5s;
+   
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+@keyframes slideRight{
+    0%   {color: rgb(206, 18, 18);}
+    25%  {color: rgb(201, 100, 18);}
+    50%  {color: rgb(19, 19, 192);}
+    100% {color: rgb(27, 177, 214);}
+
+
+}
+
+@keyframes zoomIn{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100%{
+        transform: scale(1);
+        opacity: 1;
+
+    }
+}
+
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+       
+    }
+
+    50%{
+        transform: scale(-24px);
+        
+
+    }
+    100%{
+        transform: scale(0);
+        
+
+    }
+}

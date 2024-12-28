@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content1 %} 
+
+<div class="row my-2 ">
+
+    {% for i in projects_show %}
+
+    <div class="col-6">
+
+    <h3 style="color: aliceblue;"> {{i.title}} </h3>
+    
+    <a href="{{i.link}}" target="_blank">
+        
+    <img src="{% static i.path %}" width="500" height="800" class="img-fluid">
+     </a href="">
+    
+    </div>
+{% endfor %}
+
+
+</div>
+
+{% endblock content1 %} 
+
+
+<!--
+        <a href="https://github.com/Anarulislam10" target="_blank" class="ms-2">
+                    <img src="{% static 'images/git.jpg' %}" alt="Github" height="50" width="50" class="social-link">
+                    
+                </a>
+
+-->
