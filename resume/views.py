@@ -22,12 +22,12 @@ def projects(request):
         },
 
          {"title":" portfolio",
-        "path":"images/portfolio.jpg",
+        "path":"images/p.png",
         "link":"https://github.com/Anarulislam10/MachineLearning",
         },
 
          {"title":" Timetable Schedular",
-        "path":"images/timtable.PNG",
+        "path":"images/t.jpg",
         "link":"https://github.com/Anarulislam10/MachineLearning",
         }  
     
